@@ -7,44 +7,44 @@
 ![Min SDK](https://img.shields.io/badge/Min%20SDK-24-orange.svg)
 ![Target SDK](https://img.shields.io/badge/Target%20SDK-34-orange.svg)
 
-Ứng dụng Android phân tích và theo dõi tương tác trên Facebook
+Android application for analyzing and tracking Facebook interactions
 
 </div>
 
-## 📋 Mô tả
+## 📋 Description
 
-**FB Analytics Pro** là một ứng dụng Android được xây dựng bằng Kotlin, cho phép người dùng phân tích và theo dõi các tương tác trên Facebook. Ứng dụng cung cấp thông tin chi tiết về hoạt động của người dùng và bạn bè trên nền tảng mạng xã hội.
+**FB Analytics Pro** is an Android application built with Kotlin that allows users to analyze and track interactions on Facebook. The app provides detailed insights about user activity and friend interactions on the social media platform.
 
-## ✨ Tính năng chính
+## ✨ Key Features
 
-- 🔐 **Đăng nhập Facebook**: Đăng nhập an toàn qua WebView với xác thực token
-- 📊 **Phân tích dữ liệu**: Hiển thị thống kê chi tiết về tương tác
-- 👥 **Quản lý bạn bè**: Theo dõi và phân tích tương tác với bạn bè
-- 🔄 **Thu thập dữ liệu nền**: Dịch vụ chạy ngầm để thu thập thông tin
-- 📱 **Giao diện hiện đại**: Thiết kế Material Design với hiệu ứng mượt mà
-- 🎨 **Glass Morphism UI**: Giao diện đẹp mắt với hiệu ứng kính mờ
-- 🔔 **Thông báo**: Hỗ trợ thông báo foreground service
-- 📡 **Tích hợp Telegram**: Gửi báo cáo qua Telegram Bot
+- 🔐 **Facebook Login**: Secure login via WebView with token authentication
+- 📊 **Data Analysis**: Display detailed interaction statistics
+- 👥 **Friend Management**: Track and analyze friend interactions
+- 🔄 **Background Data Collection**: Background service for collecting information
+- 📱 **Modern Interface**: Material Design with smooth animations
+- 🎨 **Glass Morphism UI**: Beautiful interface with glass blur effects
+- 🔔 **Notifications**: Foreground service notification support
+- 📡 **Telegram Integration**: Send reports via Telegram Bot
 
-## 🏗️ Kiến trúc
+## 🏗️ Architecture
 
-### Các Activity chính:
+### Main Activities:
 
-- **MainActivity**: Màn hình chính và landing page
-- **LoginActivity**: Xử lý đăng nhập Facebook qua WebView
-- **AnalysisActivity**: Hiển thị phân tích và thống kê dữ liệu
+- **MainActivity**: Main screen and landing page
+- **LoginActivity**: Handles Facebook login via WebView
+- **AnalysisActivity**: Displays data analysis and statistics
 
-### Các Component:
+### Components:
 
-- **DataCollectorService**: Foreground Service thu thập dữ liệu nền
-- **FacebookApiHelper**: Xử lý API requests đến Facebook
-- **FacebookScraper**: Thu thập và parse dữ liệu từ Facebook
-- **InteractionDatabase**: Quản lý cơ sở dữ liệu local
-- **TelegramSender**: Gửi thông báo qua Telegram Bot
+- **DataCollectorService**: Foreground Service for background data collection
+- **FacebookApiHelper**: Handles API requests to Facebook
+- **FacebookScraper**: Collects and parses data from Facebook
+- **InteractionDatabase**: Manages local database
+- **TelegramSender**: Sends notifications via Telegram Bot
 
-## 🛠️ Công nghệ sử dụng
+## 🛠️ Technologies Used
 
-- **Ngôn ngữ**: Kotlin
+- **Language**: Kotlin
 - **Min SDK**: Android 7.0 (API 24)
 - **Target SDK**: Android 14 (API 34)
 - **UI Framework**: 
@@ -53,7 +53,7 @@
   - Traditional XML Layouts
 - **Networking**: OkHttp3
 - **Async**: Kotlin Coroutines
-- **WebView**: Android WebView với JavaScript enabled
+- **WebView**: Android WebView with JavaScript enabled
 
 ## 📦 Dependencies
 
@@ -76,15 +76,15 @@ androidx.activity:activity-compose:1.8.2
 androidx.lifecycle:lifecycle-runtime-compose:2.7.0
 ```
 
-## 📱 Yêu cầu hệ thống
+## 📱 System Requirements
 
-- Android 7.0 (API 24) trở lên
-- Kết nối Internet
-- Tài khoản Facebook
+- Android 7.0 (API 24) or higher
+- Internet connection
+- Facebook account
 
-## 🔐 Quyền truy cập
+## 🔐 Permissions
 
-Ứng dụng yêu cầu các quyền sau:
+The app requires the following permissions:
 
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
@@ -94,54 +94,54 @@ androidx.lifecycle:lifecycle-runtime-compose:2.7.0
 <uses-permission android:name="android.permission.WAKE_LOCK" />
 ```
 
-## 🚀 Cài đặt
+## 🚀 Installation
 
-### Clone repository:
+### Clone the repository:
 
 ```bash
 git clone https://github.com/duydat1412/cookiestealer.git
 ```
 
-### Mở project trong Android Studio:
+### Open the project in Android Studio:
 
-1. Mở Android Studio
-2. Chọn "Open an Existing Project"
-3. Chọn thư mục `cookiestealer`
-4. Đợi Gradle sync hoàn tất
+1. Open Android Studio
+2. Select "Open an Existing Project"
+3. Select the `cookiestealer` folder
+4. Wait for Gradle sync to complete
 
-### Build và chạy:
+### Build and run:
 
-1. Kết nối thiết bị Android hoặc mở emulator
-2. Nhấn "Run" (Shift + F10) hoặc biểu tượng ▶️
+1. Connect an Android device or open an emulator
+2. Press "Run" (Shift + F10) or click the ▶️ icon
 
-## 📝 Cấu hình
+## 📝 Configuration
 
 ### Build Variants:
 
-- **Debug**: Build cho development và testing
-- **Release**: Build tối ưu cho production
+- **Debug**: Build for development and testing
+- **Release**: Optimized build for production
 
 ### ProGuard:
 
-File cấu hình tại `app/proguard-rules.pro` (hiện tại minify disabled)
+Configuration file located at `app/proguard-rules.pro` (currently minify disabled)
 
-## 🎨 Giao diện
+## 🎨 User Interface
 
-Ứng dụng sử dụng theme tùy chỉnh với:
+The app uses a custom theme with:
 
 - Glass morphism effects
 - Gradient backgrounds
 - Smooth animations (fade in, slide up, scale)
 - Material Design 3 components
-- Custom drawables và icons
+- Custom drawables and icons
 
-## 📊 Cấu trúc Database
+## 📊 Database Structure
 
-Ứng dụng sử dụng SQLite local database để lưu trữ:
+The app uses SQLite local database to store:
 
-- Thông tin tương tác
-- Dữ liệu người dùng
-- Cache API responses
+- Interaction information
+- User data
+- API response cache
 
 ## 🔧 Development
 
@@ -163,37 +163,37 @@ com.example.cookiestealer/
     └── Type.kt
 ```
 
-## ⚠️ Lưu ý quan trọng
+## ⚠️ Important Notes
 
-- Ứng dụng này được phát triển cho mục đích học tập và nghiên cứu
-- Tuân thủ chính sách và điều khoản sử dụng của Facebook
-- Bảo mật thông tin đăng nhập của người dùng
-- Không chia sẻ hoặc lưu trữ thông tin cá nhân trái phép
+- This application is developed for educational and research purposes
+- Comply with Facebook's policies and terms of service
+- Secure user login information
+- Do not share or store personal information without permission
 
 ## 📄 License
 
-Dự án này được phát hành dưới giấy phép MIT License.
+This project is released under the MIT License.
 
-## 👨‍💻 Tác giả
+## 👨‍💻 Author
 
-**Duy Đạt**
+**Duy Dat**
 
 - Facebook: [duydat141207](https://fb.com/duydat141207)
 - GitHub: [@duydat1412](https://github.com/duydat1412)
 
-## 🤝 Đóng góp
+## 🤝 Contributing
 
-Mọi đóng góp đều được chào đón! Hãy tạo pull request hoặc mở issue để báo cáo lỗi và đề xuất tính năng mới.
+All contributions are welcome! Please create a pull request or open an issue to report bugs and suggest new features.
 
-## 📞 Liên hệ
+## 📞 Contact
 
-Nếu có bất kỳ câu hỏi hoặc góp ý nào, vui lòng liên hệ qua:
+If you have any questions or suggestions, please contact via:
 
-- Email: [Tạo issue trên GitHub]
+- Email: [Create an issue on GitHub]
 - Facebook: https://fb.com/duydat141207
 
 ---
 
 <div align="center">
-Made with ❤️ by Duy Đạt
+Made with ❤️ by Duy Dat
 </div>
