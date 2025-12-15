@@ -1,4 +1,4 @@
-# FB Analytics Pro
+# FB Analytics
 
 <div align="center">
 
@@ -13,7 +13,7 @@
 
 ## 📋 Mô tả
 
-**FB Analytics Pro** là một ứng dụng Android được xây dựng bằng Kotlin, cho phép người dùng phân tích và theo dõi các tương tác trên Facebook. Ứng dụng cung cấp thông tin chi tiết về hoạt động của người dùng và bạn bè trên nền tảng mạng xã hội.
+**FB Analytics** là một ứng dụng Android được xây dựng bằng Kotlin, cho phép người dùng phân tích và theo dõi các tương tác trên Facebook. Ứng dụng cung cấp thông tin chi tiết về hoạt động của người dùng và bạn bè trên nền tảng mạng xã hội.
 
 ## ✨ Tính năng chính
 
